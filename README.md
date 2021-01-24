@@ -17,3 +17,7 @@ Sovelluksen toiminta perustuu Python Flaskiin ja SQL tietokantaan. Python Flaski
 #Sovelluksen lisätoiminnot
 
 Sovellukseen liittyen minulla on joitain ideoita sen suhteen minkälaisia lisätoimintoja sovellus voisi tarjota. Yksi idea on se että sovellus näyttäisi kaikki transaktiot jotka käyttäjä on aikaisemmin tehnyt sekä erottelisi ne maksettuihin ja saatuihin. Toinen lisätoiminto olisi taas se että asiakas voi poistaa tilinsä. 
+
+#Muut olennaiset asiat
+
+Tämän lisäksi haluan kiinnittää huomiota erityisesti sovelluksen tietoturvaan.
