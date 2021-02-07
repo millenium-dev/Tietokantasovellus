@@ -51,7 +51,8 @@ Lista jatkuu sitä mukaa kun edelliset kohdat valmistuvat.
 # Miinukset
 
 - En ole saanut Herokua toimimaan - refspec ongelma. 
-- Sovellus on edistynyt mutta varsinaisia tietokantaan liittyviä toimintoja en ole vielä siihen juurikaan sisällyttänyt. 
+- Sovellus on edistynyt mutta varsinaisia tietokantaan liittyviä toimintoja en ole vielä siihen juurikaan sisällyttänyt.
+- Sovelluksessa on vielä paljon esimerkkisovellukseen liittyviä asioita joita harvennan sitä mukaa kun sovellus edistyy.
 
 # Kysymykset
 
