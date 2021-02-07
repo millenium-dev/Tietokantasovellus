@@ -43,15 +43,15 @@ Lista jatkuu sitä mukaa kun edelliset kohdat valmistuvat.
 
 # Plussat
 
-Olen joksenkin tyytyväinen sovelluksen visuaaliseen ilmeeseen, vaikka se onkin vielä todella kaukana todellisten huippusivujen ilmeestä.
-Koen oppineeni paljon uutta niin css:ästä kuin html:ästä.
-Koen että minulla on aika selvä visio sen suhteen miten vien sovellusta eteenpäin. 
-Sovelluksen tekeminen on ollut hauskaa. 
+- Olen joksenkin tyytyväinen sovelluksen visuaaliseen ilmeeseen, vaikka se onkin vielä todella kaukana todellisten huippusivujen ilmeestä.
+- Koen oppineeni paljon uutta niin css:ästä kuin html:ästä.
+- Koen että minulla on aika selvä visio sen suhteen miten vien sovellusta eteenpäin. 
+- Sovelluksen tekeminen on ollut hauskaa. 
 
 # Miinukset
 
-En ole saanut Herokua toimimaan - refspec ongelma. 
-Sovellus on edistynyt mutta varsinaisia tietokantaan liittyviä toimintoja en ole vielä siihen juurikaan sisällyttänyt. 
+- En ole saanut Herokua toimimaan - refspec ongelma. 
+- Sovellus on edistynyt mutta varsinaisia tietokantaan liittyviä toimintoja en ole vielä siihen juurikaan sisällyttänyt. 
 
 # Kysymykset
 
