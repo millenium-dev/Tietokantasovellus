@@ -34,6 +34,14 @@ CREATE TABLE transfers (
     sent_at TIMESTAMP,
     transaction_type TEXT
 );
+CREATE TABLE withdrawals (
+ id SERIAL PRIMARY KEY ,
+account_number INTEGER REFERENCES accounts,
+sum INTEGER,
+account_balance INTEGER,
+sent_at TIMESTAMP,
+transaction_type TEXT );
+
 
 
 
