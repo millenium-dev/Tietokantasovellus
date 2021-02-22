@@ -1,16 +1,189 @@
-Viestien määrä: {{ count }}
+<!DOCTYPE html>
+<link rel="stylesheet" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-image: url("https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80") ;
+    margin: auto;
+    max-width: 45em;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    border-radius: .5em
+    margin-bottom: 100px;
+}
+.image {
+   content:url(https://www.freelogodesign.org/file/app/client/thumb/851ebe0e-d82d-4b59-a5bc-87fa6c17681f_200x200.png?1612573072468);
+     max-width: 250px;
+ max-height: 250px;
+    position: absolute;
+  top: 115px;
+  right: 170px;
+  font-size: 18px;
+}
+.bar {
+    position: absolute;
+  top: 420px;
+  right: 75px;
+  font-size: 18px;
+    color:white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 10px;
+  text-align: center;
+}
+nav li {
+    display: inline-block;
+    padding: 0 .5em;
+    background: white;
+    border-radius: .5em;
+    margin: .2em;
+
+}
+.point {
+    display: block;
+    float: right;
+    padding: .5em;
+    border-radius: .5em;
+
+
+}
+.point2 {
+      font-size: 20px;
+}
+nav ul {
+    padding: 0;
+}
+h2 {
+    margin-top: 0;
+}
+
+.header {
+    background: antiquewhite;
+    opacity: 0.8;
+    font-weight: bold;
+    padding: 2em 1em;
+    font-size: 2em;
+    margin-top: .5em;
+    border-radius: .5em;
+
+
+}
+
+h1 {
+  color: black;
+    opacity: 1.0;
+  margin-left: 150px;
+    border-radius: .5em;
+
+}
+</style>
+
+<body>
+<p class="image">
+</p>
+<p class="bar">
+    PALVELUMME
+    <br>
+    <br>
+     <a href="/pankkipalvelut">Pankkipalvelut</a>
+    <br>
+    <br>
+    <br>
+    TIETOA ATTICA BANKISTA
+    <br>
+    <br>
+    <a href="/about">Keitä olemme</a>
+    <br>
+    <br>
+    <a href="/financial">Attica Bank lukuina</a>
+    <br>
+    <br>
+    <br>
+    LISÄPALVELUT
+    <br>
+    <br>
+    <a href="/restaurant">Toimipisteidemme ravintolatarjonta</a>
+    <br>
+    <br>
+    <br>
+    PALAUTE
+    <br>
+    <br>
+    <a href="/palaute">Lähetä palautetta</a>
+    <br>
+    <br>
+    <br>
+    ASIAKASPALVELU
+    <br>
+    <br>
+    <a href="/asiakaspalvelu">Ota yhteyttä asiakaspalveluumme</a>
+</p>
+ <div class="header">
+<h1> Attica Bank</h1>
+ </div>
 <hr>
-{% for message in messages %}
-<i>Viesti:</i> {{ message[0] }}
-<p>
-<i>Lähettäjä:</i> {{ message[1] }}
-<p>
-<i>Aika:</i> {{ message[2].strftime("%Y-%m-%d %H:%M:%S") }}
+<i>Perustettu:</i> 2010
+ <p>
+    <i>Kotipaikka:</i> Tokyo, Japani
+      <p>
+<i>Aikavyöhyke:</i> UTC+09:00
 <hr>
-{% endfor %}
+<div class="header">
+<h2>Tervetuloa Attica Bankin verkkosivuille!</h2>
+    <p class="point2">Olemme vuonna 2010 perustettu japanilainen pankki. Palvelemme niin yksityis- kuin yritysasiakkaita. Toivotamme uudet asiakkaat lämpimästi tervetulleeksi. Uerukamu!</p>
+     </div>
+
+ <h3>Viimeisimmät uutiset </h3>
+ <div class="grid-container">
+<div class="grid-item">
+    <h4>Viikkokirje, Viikko 4 - Kestävän energian rahasto</h4>
+    <p>
+    Tämä on hyvä aika olla osa kestävän energian rahastoa. Etsimme mahdollisuuksia sijoittaa puhtaaseen ja uusiutuvaan energiaan liittyviin tekniikoihin, energiansäästöön, energiatehokkuuteen ja kestävään energiaan liittyviin yrityksiin, jotka tarjoavat mahdollisuuksia ja etuja. Kysy mihin sinulla voi olla pätevyys sijoittaa: • Kestävän energian rahastosalkkumme koostuu neljästä rahastosta, jotka auttavat vastaamaan kestävän energiarahaston suurimpiin haasteisiin: Kestävän energian rahasto on sijoittajien käytettävissä, joilla on osakkeita Attica Bankissa.
+    </p>
+    <p> - Eriko, Viestintäharjoittelija, Attica Bank </p>
+    </div>
+     <div class="grid-item">
+         <h4> Tiedote: Attica Bankin teknologiakonferenssi 22.11.2021</h4>
+<p>
+Attica Bankin teknologiakonferenssi: Olemme konferenssin järjestäjät, kehittäjät ja suunnittelijat, jotka isännöivät seuraavan sukupolven tapahtumaa. Olemme unelmatiimisi. Olemme teknologiakonferenssi, jossa keskitytään paitsi tekniikkaan myös suunnitteluun ja niiden sosiaalisiin vaikutuksiin. Se luo turvallisen ja inspiroivan tilan kaikille. Tämän vuoden erityisteemana on kestävä kehitys. Viime vuoden konferenssi paljastui jättimenestyksesi ja odotamme tästä vuodesta vähintäänkin yhtä huikeata. Muistathan että konferenssi järjestetään tänä vuonna etänä!
+</p>
+         <p> - Yui, Viestintävastaava, Attica Bank </p>
+         </div>
+          </div>
+ <h3>Terveisiä asiakkailtamme</h3>
+ <div class="grid-container">
+     <div class="grid-item">
+         <h4>Asiakastervehdys: Kawana Motors</h4>
+<p>
+    Olemme pieni yritys, joka aloitti toimintansa kesällä 2005. Olemme auttaneet monia ihmisiä järjestämällä retriittejä, työpajoja ja projekteja, jotka ovat auttaneet vähentämään stressiä, edistämään rauhaa ja antamaan yhteisöllisyyden tunnetta. Kannustamme opiskelijoita ja ammattilaisia toimimaan ja saavuttamaan henkilökohtaiset ja ammatilliset tavoitteensa työpajojen, retriittien ja konferenssien avulla. Olemme olleet hyvin tyytyväisiä Attica Bankilta saamaamme palveluun.
+    </p>
+         <p> - Shinsuke, Toimistopäällikkö, Kawana Motors </p>
+         </div>
+     <div class="grid-item">
+         <h4>Asiakastervehdys: Origami Garden</h4>
+<p>
+    Meillä on uusi sijainti, upouusi tiimi ja olemme jälleen toiminnassa! Olemme tehneet yhteistyötä yli vuoden ajan, yli 100 asiakkaan kanssa, ja kehitämme jatkuvasti uusia ominaisuuksia, lisäämme uusia palveluita ja tutustumme asiakkaisiimme paremmin. Olemme rakentaneet melkein 20 hengen tiimin varmistaaksemme, että olemme aina valmiita ja ajan tasalla tekniikasta. Attica Bankin dynaaminen olemus ja liiketoimintamme sopivat erinomaisesti yhteen. Toivommekin yhteistyön jatkuvan vielä pitkään!
+</p>
+            <p> - Hitomi, Tuotantovastaava, Origami Garden </p>
+   </div>
+     </div>
+
+<p> © 2020 Attica Bank Abp, 〒106-0044東京都港区東麻布, 1-8-1 Attica, Tokyo, Japani</p>
+
+<p> J-tunnus: 331188-11, BIC: JPYAAQQ</p>
 {% if session.user_id %}
 Olet kirjautunut sisään.
-<a href="/new">Lähetä viesti</a> | <a href="/logout">Kirjaudu ulos</a>
+<a href="/logout">Kirjaudu ulos</a>
 {% else %}
 <a href="/login">Kirjaudu sisään</a>
 {% endif %}
+</body>

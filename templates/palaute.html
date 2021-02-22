@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kirjautumissivu</title>
+    <title>Palautelomake</title>
     <style>
 form {border: 2px solid rgb(240,240,240);}
     body {
@@ -14,6 +14,11 @@ margin: auto;
     .box {
   padding: 16px;
 }
+    .box3 {
+  width: 100px;
+       height: 45px;
+        margin-left: 20px;
+}
     .box2 {
   padding: 16px;
   box-sizing: border-box;
@@ -23,9 +28,9 @@ margin: auto;
 
 }
     button {
-  background-color: #4CAF52;
+  background-color: white;
         border: none;
-  color: white;
+  color: black;
   padding: 18px 40px;
   margin: 10px 0;
   cursor: pointer;
@@ -65,24 +70,32 @@ h1 {
 </style>
 <body>
 <div class="header">
-<h1> Kirjaudu sisään</h1>
+<h1> Palautelomake</h1>
 </div>
 <br>
 <br>
 
-<form action="/login" method="post">
+<form action="/lähetys" method="post">
 <div class="box">
-<b>Tunnus:</b> <input type="text" placeholder="Kirjoita tunnuksesi" name="username">
-<p>
-<b>Salasana:</b> <input type="password" placeholder="Kirjoita salasanasi" name="password">
-<p>
-<button type="submit"> Kirjaudu</button>
+    <label for="palaute"><b>Palautteen aihealue:</b></label>
+  <select name="palaute" id="palaute" required>
+    <option value="pankkipalvelut">Pankkipalvelut</option>
+    <option value="asiakastyytyväisyys">Asiakastyytyväisyys</option>
+    <option value="toimistoverkosto">Toimistoverkoston laajuus</option>
+    <option value="kehittämisehdoitukset">Kehittämisehdoitukset</option>
+  </select>
+    <br><br><br>
+    <label for="palautesisältö"><b>Palautteen sisältö:</b></label>
+<textarea id="palautesisältö" placeholder="Kirjoita tähän palautteesi" name="palautesisältö" rows="6" cols="50" required>
+  </textarea>
+  <br><br>
 </div>
+    <input class="box3" type="submit" value="Lähetä">
 </form>
 <br>
 
 <div class="box2">
-Mikäli sinulla ei ole tiliä voit luoda sellaisen painamalla <a href="/register">tästä</a>
+Haluaisitko sittenkin mielummin olla yhteydessä asiakaspalveluumme? Klikkaa <a href="/asiakaspalvelu">tästä</a>
 </div>
 </body>
 </html>
