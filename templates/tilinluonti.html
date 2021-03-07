@@ -65,23 +65,16 @@ h1 {
 </style>
 <body>
 <div class="header">
-<h1> Pankkipalvelut</h1>
+<h1> Luo pankkitili</h1>
 </div>
 <br>
 <br>
+<h3> Hei, olemme ohjanneet sinut tälle sivulle sillä tiliisi ei ole vielä liitetty varsinaista pankkitiliä. Voit luoda sellaisen painamalla allaolevaa painiketta. Tilejä voi olla maksimissaan yksi per henkilö.</h3>
 
-<form action="/login" method="post">
+<form action="/tili" method="POST">
 <div class="box">
-<b>Tilit ja tilisiirrot:</b>
-<button onclick="location.href='/tilinsaldo'" type="button"> Tarkista tilisi saldo</button>
-<button onclick="location.href='/tehdyttalletukset'" type="button"> Tarkista aiemmat talletuksesi</button>
-<button onclick="location.href='/tilihistoria'" type="button"> Tarkista tilihistoriasi</button>
-    <br>
-    <br>
-    <b>Talletukset ja maksut:</b>
-<button onclick="location.href='/talletus'" type="button"> Talleta rahaa</button>
-    <button onclick="location.href='/siirto'" type="button"> Siirrä rahaa</button>
-    <button onclick="location.href='/nosto'" type="button"> Nosta rahaa</button>
+<b>Tili:</b>
+<button type="submit"> Luo tili</button>
 </div>
 </form>
 <br>

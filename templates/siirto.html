@@ -1,9 +1,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pankkipalvelut</title>
+    <title>Siirto</title>
     <style>
-form {border: 2px solid rgb(240,240,240);}
+form {
+    border: 2px solid rgb(240,240,240);
+    padding: 0.5em 0.5em;
+
+}
     body {
 background-image: url("https://images.unsplash.com/photo-1531219572328-a0171b4448a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") ;
 margin: auto;
@@ -65,24 +69,20 @@ h1 {
 </style>
 <body>
 <div class="header">
-<h1> Pankkipalvelut</h1>
+<h1> Siirrä rahaa</h1>
 </div>
 <br>
 <br>
-
-<form action="/login" method="post">
-<div class="box">
-<b>Tilit ja tilisiirrot:</b>
-<button onclick="location.href='/tilinsaldo'" type="button"> Tarkista tilisi saldo</button>
-<button onclick="location.href='/tehdyttalletukset'" type="button"> Tarkista aiemmat talletuksesi</button>
-<button onclick="location.href='/tilihistoria'" type="button"> Tarkista tilihistoriasi</button>
+<form action="/siirrot" method="POST">
+    <br>
+<b>Ole hyvä ja ilmoita saajan tilinumero sekä siirettävän summan määrä allaoleviin tekstikenttiin.</b>
     <br>
     <br>
-    <b>Talletukset ja maksut:</b>
-<button onclick="location.href='/talletus'" type="button"> Talleta rahaa</button>
-    <button onclick="location.href='/siirto'" type="button"> Siirrä rahaa</button>
-    <button onclick="location.href='/nosto'" type="button"> Nosta rahaa</button>
-</div>
+  <label for="tilinumero"><b>Saajan tilinumero:</b></label>
+  <input type="text" id="tilinumero" name="tilinumero"><br><br>
+    <label for="summa"><b>Summa:</b></label>
+  <input type="text" id="summa" name="summa"><br><br>
+  <input type="submit" value="Lähetä">
 </form>
 <br>
 

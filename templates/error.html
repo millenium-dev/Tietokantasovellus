@@ -1,1 +1,86 @@
-Virhe: {{ message }}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siirto</title>
+    <style>
+form {border: 2px solid rgb(240,240,240);}
+    body {
+background-image: url("https://images.unsplash.com/photo-1544885935-98dd03b09034?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80") ;
+margin: auto;
+    max-width: 45em;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    border-radius: .5em
+    }
+    .box {
+  padding: 16px;
+}
+    .box2 {
+  padding: 16px;
+  box-sizing: border-box;
+        border: 2px solid rgb(240,240,240);
+        background: deepskyblue;
+        color: white;
+
+}
+    button {
+  background-color: white;
+        border: none;
+  color: black;
+  padding: 18px 40px;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+input {
+  width: 100%;
+  padding: 13px 22px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+.header {
+    background: antiquewhite;
+    opacity: 0.9;
+    color: black;
+    font-weight: bold;
+    padding: 1em 1em;
+    font-size: 2em;
+    margin-top: .5em;
+    border-radius: .5em;
+    border-radius: .5em;
+    margin-left: 60px;
+
+}
+
+h1 {
+  color: red;
+    opacity: 1.0;
+    border-radius: .5em;
+
+}
+</style>
+<body>
+<div class="header">
+<h1> Virhe!</h1>
+</div>
+<br>
+<br>
+
+<div class="header">
+    <p>Virheen syy: {{ message }}</p>
+
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

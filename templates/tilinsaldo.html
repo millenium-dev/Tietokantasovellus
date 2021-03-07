@@ -20,7 +20,13 @@ margin: auto;
         border: 2px solid rgb(240,240,240);
         background: deepskyblue;
         color: white;
-
+}
+    .box3 {
+  padding: 16px;
+  box-sizing: border-box;
+        border: 2px solid rgb(240,240,240);
+        background: white;
+        opacity: 0.8;
 }
     button {
   background-color: white;
@@ -65,27 +71,21 @@ h1 {
 </style>
 <body>
 <div class="header">
-<h1> Pankkipalvelut</h1>
+<h1> Tilin saldo</h1>
 </div>
 <br>
 <br>
-
-<form action="/login" method="post">
-<div class="box">
-<b>Tilit ja tilisiirrot:</b>
-<button onclick="location.href='/tilinsaldo'" type="button"> Tarkista tilisi saldo</button>
-<button onclick="location.href='/tehdyttalletukset'" type="button"> Tarkista aiemmat talletuksesi</button>
-<button onclick="location.href='/tilihistoria'" type="button"> Tarkista tilihistoriasi</button>
-    <br>
-    <br>
-    <b>Talletukset ja maksut:</b>
-<button onclick="location.href='/talletus'" type="button"> Talleta rahaa</button>
-    <button onclick="location.href='/siirto'" type="button"> Siirrä rahaa</button>
-    <button onclick="location.href='/nosto'" type="button"> Nosta rahaa</button>
-</div>
-</form>
+<hr>
+<div class="box3">
+<i>Tilin numero:</i> {{ account_number }}
+ <p>
+    <i>Tilin saldo:</i> {{ account_balance }} Japanin yeniä ¥
+      <p>
+<i>Päivämäärä:</i> <script> document.write(new Date().toLocaleDateString()); </script>
+    </div>
+<hr>
 <br>
-
+<button onclick="location.href='/'" type="button"> <b>Palaa etusivulle</b></button>
 <div class="box2">
 Onko sinulla kysyttävää tai haluaisitko tietää lisää palveluistamme? Klikkaa <a href="/asiakaspalvelu">tästä</a>
 </div>
