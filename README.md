@@ -38,6 +38,9 @@ Sovellusta voi testata luomalla käyttäjätilin. Tietyt sivut ovat toki myös n
 
 - - - - - - - - - - - - - - - - - - --  - - --  - - - --  - - - - -- - - - - - - - - - - - --- -- - - - 
 
+01.02.2021
+------------------------
+
 # Tietokantasovellus - Pankkitili
 
 Tässä README tiedostossa esittelen suunnitelmani tietokantasovellusprojektia varten. 
