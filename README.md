@@ -75,7 +75,9 @@ Sovellukseen liittyen minulla on joitain ideoita sen suhteen minkälaisia lisät
 Tämän lisäksi haluan kiinnittää huomiota erityisesti sovelluksen tietoturvaan.
 
 ---------------------------------------------------------------------------------------------------------------
+
 07.02.2021
+---------------------------------
 
 # Sovelluksen nykytilanne
 
