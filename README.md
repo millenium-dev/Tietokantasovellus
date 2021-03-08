@@ -1,3 +1,12 @@
+08.03.2021 / 09.03.2021
+------------------------
+Huomasin että kaikki toiminnot eivät toimineetkaan Herokussa odotetun lailla ja tein alla mainitut, joskin deadlinen yli menevät toimipiteet. Nyt sovellus toimii myös Herokussa niin kuin pitää.
+
+Muutokset:
+- Lisätty oikea, Herokuun viittava URL osoite db.py tiedostoon 
+- Poistettu emv-tiedosto Githubista
+
+
 
 07.03.2021
 --------------------
